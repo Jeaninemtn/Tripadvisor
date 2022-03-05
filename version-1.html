@@ -40,14 +40,16 @@
         background-color: #eee;
     }
 
-    .button-sign, .btn-joinus {
+    .button-sign,
+    .btn-joinus {
         color: #fff;
         background-color: #000;
         border-radius: 30px;
         padding: 6px 14px;
     }
 
-    .button-sign:hover, .btn-joinus:hover {
+    .button-sign:hover,
+    .btn-joinus:hover {
         color: #fff;
         background-color: rgba(0, 0, 0, 0.712);
     }
@@ -109,11 +111,21 @@
         align-items: center;
         text-align: center;
     }
+
     .myCard button {
         width: 40px;
         height: 40px;
         background-color: rgb(151, 151, 151);
         border-radius: 50%;
+    }
+
+    .beach-dest-text {
+        margin-top: -50px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        color: #fff;
+        font-weight: 700;
+        background-color: rgba(0, 0, 0, 0.2);
     }
 
     .section-explore {
@@ -130,6 +142,124 @@
         width: 100%;
         height: 200px;
 
+    }
+
+    .img-wrap-choice-logo img {
+        width: 10%;
+    }
+
+    .img-wrap-background img {
+        width: 60%;
+    }
+
+    .section-choice .container {
+        height: 500px;
+        background: url('https://static.tacdn.com/img2/brand/feed/tc_cards_desktop2x.jpeg') no-repeat;
+        background-size: 75%;
+        background-position: 100% 0;
+    }
+
+    .section-choice {
+        background-color: #004f32;
+    }
+
+    .img-wrap-choice-logo img {
+        width: 50%;
+        margin-top: 40%;
+    }
+
+    .text-choice {
+        width: 22%;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-choice h3 {
+        margin-top: 20px;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .btn-winner {
+        background-color: #000;
+        padding: 10px;
+        border-radius: 20px;
+        width: 60%;
+        margin: 30px auto;
+    }
+
+    .section-trending ul a {
+        color: #000;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+
+    .table-hotel tr td {
+        border: 1px solid transparent;
+    }
+
+    .table-hotel div {
+        width: 25%;
+    }
+
+    .table-hotel p {
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 0.6rem;
+    }
+
+    footer {
+        background-color: #faf1ed;
+        
+    }
+
+    .footer-info h6 {
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    .footer-info {
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 0.6rem;
+    }
+
+    .footer-info span {
+        font-weight: 700;
+    }
+
+    .img-wrap-footer-logo {
+        width: 40px;
+        margin-top: 6px;
+    }
+
+    .img-wrap-footer-logo img {
+        width: 100%;
+    }
+
+    .btn-outline-dark {
+        width: 200px;
+        height: 40px;
+        justify-content: space-between;
+        background-color: #fff;
+        border: 2px solid rgb(211, 211, 211);
+        border-radius: 15px;
+        font-weight: 700;
+    }
+    footer li {
+        margin-right: 10px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    footer span {
+        font-size: 0.7rem;
+    }
+    .footer-term-p {
+        font-size: 0.7rem;
     }
 </style>
 
@@ -247,20 +377,22 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="img-wrap-ukraine pt-3 pb-3 mr-3" style="width: 50%;">
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/47/53/f7/caption.jpg?w=800&h=-1&s=1" alt="">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/47/53/f7/caption.jpg?w=800&h=-1&s=1"
+                        alt="">
                 </div>
                 <div class="text-ukraine" style="width: 40%;">
                     <p><img src="./img/favicon-ico.ico" alt="" width="40px">Tripadvisor Foundation</p>
                     <h3>Help Ukrainian families in need</h3>
-                    <p>The Tripadvisor Foundation is supporting the World Central Kitchen to feed hundreds of thousands of displaced Ukrainians. Donate today, and we'll match your donation.</p>
+                    <p>The Tripadvisor Foundation is supporting the World Central Kitchen to feed hundreds of thousands
+                        of displaced Ukrainians. Donate today, and we'll match your donation.</p>
                     <a href="#" class="btn-joinus text-decoration-none">Join us</a>
                 </div>
             </div>
-            
+
 
         </div>
     </div>
-    <div class="container mt-5 mb-3">
+    <div class="section-taipei container mt-5">
         <div class="container">
             <div class="row flex-column ">
                 <h4>Ways to tour New Taipei</h4>
@@ -384,6 +516,100 @@
 
         </div>
     </div>
+    <div class="section-beach container mt-5 mb-3">
+        <div class="container">
+            <div class="row flex-column ">
+                <h4>Top destinations for beach lovers</h4>
+                <p>Recommended based on your activity</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-5">
+                <div class="myCard d-flex" style="width: 100%; height: 100%; flex-direction: column;">
+                    <div class="item-img-wrap">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/66/68/f6/caption.jpg?w=600&h=600&s=1&cx=988&cy=664&chk=v1_d1b5b3f4c384c764b7e1"
+                            alt="" style="width: 100%; object-fit: cover; ">
+                    </div>
+                    <h4 class="beach-dest-text">
+                        Tulum, Mexico</h4>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5">
+                <div class="myCard d-flex" style="width: 100%; height: 100%; flex-direction: column;">
+                    <div class="item-img-wrap">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f7/dd/caption.jpg?w=600&h=600&s=1"
+                            alt="" style="width: 100%; object-fit: cover; ">
+                    </div>
+                    <h4 class="beach-dest-text">
+                        Tenerife, Spain</h4>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5">
+                <div class="myCard d-flex" style="width: 100%; height: 100%; flex-direction: column;">
+                    <div class="item-img-wrap">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f4/70/caption.jpg?w=600&h=600&s=1"
+                            alt="" style="width: 100%; object-fit: cover; ">
+                    </div>
+                    <h4 class="beach-dest-text">
+                        Hawaii</h4>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5">
+                <div class="myCard d-flex" style="width: 100%; height: 100%; flex-direction: column;">
+                    <div class="item-img-wrap">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/ee/14/caption.jpg?w=600&h=600&s=1"
+                            alt="" style="width: 100%; object-fit: cover; ">
+                    </div>
+                    <h4 class="beach-dest-text">
+                        Aruba</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-rentals container mt-5 mb-3">
+        <div class="container">
+            <div class="row flex-column mb-4">
+                <h3>Home Rentals Near You</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-5">
+                <div class="myCard d-flex" style="width: 100%; height: 100%; flex-direction: column;">
+                    <div>
+                        <h4>We think you'd enjoy these homes for a quick trip out of town.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5">
+                <div class="myCard d-flex" style="width: 100%; height: 100%; flex-direction: column;">
+                    <div class="item-img-wrap">
+                        <img src="https://media-cdn.tripadvisor.com/media/vr-splice-j/05/83/a3/f7.jpg" alt=""
+                            style="width: 100%; object-fit: cover; ">
+                    </div>
+                    <h5>Rentals in Taichung</h5>
+                    <h6>18 rentals</h6>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5">
+                <div class="myCard d-flex" style="width: 100%; height: 100%; flex-direction: column;">
+                    <div class="item-img-wrap">
+                        <img src="./img/55-jpg.jpg" alt="" style="width: 100%; object-fit: cover; ">
+                    </div>
+                    <h5>Rentals in Kaohsiung</h5>
+                    <h6>22 rentals</h6>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5">
+                <div class="myCard d-flex" style="width: 100%; height: 100%; flex-direction: column;">
+                    <div class="item-img-wrap">
+                        <img src="./img/82-jpg.jpeg" alt="" style="width: 100%; object-fit: cover; ">
+                    </div>
+                    <h5>Rentals in Hualian</h5>
+                    <h6>12 rentals</h6>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="section-explore">
         <div class="container pt-4 mb-4">
             <h4>More to explore</h4>
@@ -436,17 +662,178 @@
 
         </div>
     </div>
-    <div class="section-choice">
-        <div>
-            <img src="" alt="">
+    <div class="section-choice mb-5">
+        <div class="container">
+                <div class="text-choice">
+                    <div class="img-wrap-choice-logo">
+                        <img src="https://static.tacdn.com/img2/travelers_choice/TC_logomark_solid_cream.svg" alt="">
+                    </div>
+                    <h3>Travelers' <br>
+                        Choice Best of<br>
+                        the Best</h3>
+                    <a class="btn-winner">see the winners</a>
+                </div>
         </div>
-        <div>
-            <img src="https://static.tacdn.com/img2/brand/feed/tc_cards_desktop.jpeg" alt="">
+    </div>
+    <div class="section-trending mb-3">
+        <div class="container">
+            <div class="row flex-column">
+                <h3>Trending in Travel</h3>
+                <div class="mt-2">
+                    <ul class="d-flex list-unstyled mb-4">
+                        <a href="">
+                            <li class="mr-3">Places to Go</li>
+                        </a>
+                        <a href="">
+                            <li class="mr-3">Things to Do</li>
+                        </a>
+                        <a href="">
+                            <li class="mr-3">Places to Stay</li>
+                        </a>
+                    </ul>
+                    <div class="table-hotel d-flex">
+                        <div>
+                            <p>Las Vegas Hotels</p>
+                            <p>Destin Hotels</p>
+                            <p>Myrtle Beach Hotels</p>
+                            <p>Gatlinburg Hotels</p>
+                            <p>Walt Disney World Hotels</p>
+                        </div>
+                        <div>
+                            <p>Las Vegas Hotels</p>
+                            <p>Destin Hotels</p>
+                            <p>Myrtle Beach Hotels</p>
+                            <p>Gatlinburg Hotels</p>
+                            <p>Walt Disney World Hotels</p>
+                        </div>
+                        <div>
+                            <p>Las Vegas Hotels</p>
+                            <p>Destin Hotels</p>
+                            <p>Myrtle Beach Hotels</p>
+                            <p>Gatlinburg Hotels</p>
+                            <p>Walt Disney World Hotels</p>
+                        </div>
+                        <div>
+                            <p>Las Vegas Hotels</p>
+                            <p>Destin Hotels</p>
+                            <p>Myrtle Beach Hotels</p>
+                            <p>Gatlinburg Hotels</p>
+                            <p>Walt Disney World Hotels</p>
+                        </div>
+                        <div>
+                            <p>Las Vegas Hotels</p>
+                            <p>Destin Hotels</p>
+                            <p>Myrtle Beach Hotels</p>
+                            <p>Gatlinburg Hotels</p>
+                            <p>Walt Disney World Hotels</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-        
+
+
+
 
 
     </div>
+    <footer class="pt-4">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="footer-info">
+                    <h6>About Tripadvisor</h6>
+                    <p>About Us</p>
+                    <p>Press</p>
+                    <p>Resources and Policies</p>
+                    <p>Careers</p>
+                    <p>Investor Relations</p>
+                    <p>Trust & Safety</p>
+                </div>
+                <div class="footer-info">
+                    <h6>Explore</h6>
+                    <p>Write a review</p>
+                    <p>Add a Place</p>
+                    <p>Join</p>
+                    <p>Travelers' Choice</p>
+                    <p>Insurance</p>
+                    <p>GreenLeaders</p>
+                    <p>Blog</p>
+                    <p>Help Center</p>
+                    <p>Tripadvisor Plus</p>
+                    <p>Travel Articles</p>
+                </div>
+                <div class="footer-info">
+                    <h6>Do Business With Us</h6>
+                    <p>Owners</p>
+                    <p>Sponsored Placements</p>
+                    <p>Advertise with Us</p>
+                    <p class="mb-4">Become an Affiliate</p>
+                    <h6>Get The App</h6>
+                    <p>iPhone App</p>
+                    <p>Android App</p>
+                </div>
+                <div class="footer-info footer-info-last">
+                    <h6>Tripadvisor Sites</h6>
+                    <p>Discover your dream destination with <span>Jetsetter</span></p>
+                    <p>Book the best restaurants with <span>Jetsetter</span></p>
+                    <p>Book tours and attraction tickets on <span>Jetsetter</span></p>
+                    <p>Read cruise reviews on <span>Jetsetter</span></p>
+                    <p>Get airline seating charts on <span>Jetsetter</span></p>
+                    <p>Find vacation rentals on <span>Jetsetter</span></p>
+                    <p>Find vacation rentals on <span>Jetsetter</span></p>
+                    <p>Find vacation rentals on <span>Jetsetter</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="footer-terms">
+                    <div class="img-wrap-footer-logo mr-3">
+                        <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <span>© 2022 TripAdvisor LLC All rights reserved.</span>
+                    <ul class="d-flex list-unstyled mr-4">
+                        <li>Terms of Use</li>
+                        <li>Privacy and Cookies Statement</li>
+                        <li>Cookie consent</li>
+                        <li>Site Map</li>
+                        <li>How the site works</li>
+                    </ul>
+                    
+                </div>
+                <div class="d-flex">
+                    <div type="button" class="d-flex btn btn-outline-dark mr-3">$ USD
+                        <svg viewBox="0 0 24 24" width="20px" height="20px" class="bDFSd d Vb ymbyq"><path d="M19.324 9.175l-6.8 6.6c-.3.301-.7.301-1 0l-6.8-6.6c-.3-.3-.3-.7 0-1 .1-.101.3-.2.5-.2h13.6c.4 0 .7.3.7.7 0 .2-.1.399-.2.5z"></path></svg>
+                    </div>
+                    <div type="button" class="d-flex btn btn-outline-dark">United States
+                        <svg viewBox="0 0 24 24" width="20px" height="20px" class="bDFSd d Vb ymbyq"><path d="M19.324 9.175l-6.8 6.6c-.3.301-.7.301-1 0l-6.8-6.6c-.3-.3-.3-.7 0-1 .1-.101.3-.2.5-.2h13.6c.4 0 .7.3.7.7 0 .2-.1.399-.2.5z"></path></svg>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-term-p">
+                        <p>This is the version of our website addressed to speakers of English in the United States. If you are a resident of another country or region, please select the appropriate version of Tripadvisor for your country or region in the drop-down menu.</p>
+                    </div>
+                    <div class="footer-social-logo">
+                        <svg viewBox="0 0 24 24" width="24px" height="24px" class="bDFSd d Vb ymbyq"><path d="M12.001 2.061C6.478 2.061 2 6.537 2 12.061c0 4.993 3.661 9.132 8.445 9.879v-6.99H7.89v-2.889h2.556l.001-2.203c0-2.506 1.484-3.896 3.769-3.896 1.095 0 2.23.21 2.23.21v2.445h-1.253c-1.242 0-1.639.777-1.639 1.568l.003 1.876h2.777l-.444 2.889h-2.333v6.99C18.34 21.192 22 17.054 22 12.061c0-5.524-4.477-10-9.999-10z"></path></svg>
+                        <svg viewBox="0 0 24 24" width="24px" height="24px" class="bDFSd d Vb ymbyq"><path d="M2 18.1c2.2.2 4.3-.5 5.9-1.899-1.2-.101-3.6-2.4-4-2.9h1.6c-1.9-.5-3.2-2.2-3.2-4.1.6.099 1.2.299 1.7.499h.2C2.7 8.3 2.2 6 3.1 4.1c2.1 2.6 5.3 4.2 8.6 4.4V7.4c.1-2.2 2-4 4.2-4 .9 0 1.7.3 2.4.8.4.3.8.3 1.2.2l1.9-.7c-.4.9-.9 1.6-1.6 2.3.601-.1 1.3-.4 1.9-.5l.3.2c-.6.5-1.2 1.1-1.7 1.5-.1.3-.2.7-.2 1.1 0 1.9-.5 3.8-1.3 5.601A11.982 11.982 0 019.5 20.1c-2.4.2-4.9-.199-7-1.3l-.5-.7"></path></svg>
+                        <svg viewBox="0 0 24 24" width="24px" height="24px" class="bDFSd d Vb ymbyq"><path d="M14.94 2.575c-.804-.458-1.839-.573-2.873-.573C6.547 2.001 2.06 6.488 2.06 12.009c0 4.142 2.53 7.821 6.327 9.317a12.03 12.03 0 010-2.876c.229-.806 1.149-4.946 1.149-4.946a3.169 3.169 0 01-.346-1.495c0-1.381.805-2.416 1.841-2.416.689 0 1.266.575 1.266 1.266v.115c-.229 1.15-.459 2.185-.806 3.334-.229.805.229 1.61 1.035 1.727h.461c1.726 0 3.104-1.841 3.104-4.602.116-2.186-1.609-4.025-3.795-4.025h-.346c-2.3-.116-4.255 1.724-4.37 4.14v.229c0 .805.229 1.609.689 2.301.115.114.115.229.115.229a6.646 6.646 0 00-.229 1.147c0 .229-.116.229-.347.116-1.265-.807-2.069-2.3-2.069-3.913 0-3.105 2.3-5.98 6.556-5.98 3.221-.115 5.98 2.3 6.096 5.521v.229c0 3.454-2.186 6.211-5.174 6.211-.922 0-1.729-.346-2.304-1.148 0 0-.459 1.955-.575 2.415-.345.92-.689 1.842-1.266 2.646 5.292 1.609 10.812-1.267 12.421-6.558C23.104 9.707 20.23 4.186 14.94 2.575z"></path></svg>
+                        <svg viewBox="0 0 24 24" width="24px" height="24px" class="bDFSd d Vb ymbyq"><path d="M21.938 7.9c0-.8-.199-1.6-.5-2.4-.5-1.4-1.5-2.5-2.9-3-.799-.3-1.6-.4-2.4-.5h-4.099c-1.4 0-2.8 0-4.2.1-.8 0-1.6.2-2.3.5-1.3.5-2.4 1.5-2.9 2.8-.3.8-.5 1.6-.5 2.5 0 1.1-.1 1.4-.1 4.1-.1 1.4-.1 2.7 0 4.1 0 .801.2 1.601.5 2.4.5 1.3 1.6 2.4 2.9 2.9.8.3 1.6.399 2.4.5 1.4.1 2.8.1 4.2.1s2.8 0 4.099-.1c.801 0 1.602-.2 2.4-.5a5.17 5.17 0 002.9-2.9c.301-.8.398-1.6.5-2.4 0-1.1.1-1.399.1-4.1s-.1-3.1-.1-4.1zM20.137 16c0 .6-.1 1.3-.299 1.9-.301.898-1 1.6-1.9 1.898-.6.201-1.301.301-1.9.301-1.1 0-1.4.102-4 .102-1.3 0-2.7 0-4-.102-.6 0-1.2-.1-1.9-.3-.9-.3-1.6-1-1.9-1.899-.3-.601-.4-1.2-.4-1.9 0-1.1-.1-1.4-.1-4 0-1.3 0-2.7.1-4 .1-.6.2-1.3.3-1.9.3-.9 1-1.6 1.9-1.9.7-.2 1.3-.3 2-.3 1.1 0 1.4-.1 4-.1 1.3 0 2.701 0 4 .1.6 0 1.301.1 1.9.3.898.3 1.6 1 1.898 1.9.201.6.301 1.3.301 1.9 0 1.1.102 1.4.102 4-.001 2.6-.102 3-.102 4z"></path><path d="M12.138 6.9c-2.9 0-5.1 2.3-5.1 5.1s2.3 5.1 5.1 5.1 5.101-2.3 5.101-5.1-2.301-5.1-5.101-5.1zm0 8.4c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3c1.8 0 3.2 1.5 3.3 3.3 0 1.8-1.5 3.3-3.3 3.3zM17.438 5.5c-.699 0-1.199.5-1.199 1.2s.5 1.2 1.199 1.2 1.199-.5 1.199-1.2-.5-1.2-1.199-1.2z"></path></svg>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        
+
+
+
+    </footer>
 
 
 
