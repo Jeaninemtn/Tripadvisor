@@ -43,13 +43,16 @@
     background-color: rgba(0, 0, 0, 0.712);
 }
 
+div[type=button]:hover svg {
+    fill: #fff;
+}
+
 .btn-icons .btn {
     width: 15%;
 }
 
 .buttons span {
     font-weight: 700;
-
 }
 
 .mainsec .img-wrap {
